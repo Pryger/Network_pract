@@ -76,7 +76,7 @@ int main(int argc, char **argv)
 	echoAddr -> sin_addr.s_addr = inet_addr("82.179.90.12");
 	
 	// Socket
-	int echoSocket = socket(AF_INET, SOCK_STREAM, 0);
+	int echoSocket = socket(AF_INET, SOCK_DGRAM, 0);
 	if(echoSocket == -1)
 		error("error socket 2", 11);
 	
